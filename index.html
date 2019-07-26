@@ -62,18 +62,8 @@
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
 								<li class="active"><a href="index.html">Invite</a></li>
-								<li class="has-dropdown">
-									<a href="blog.html">Gallery</a>
-									<ul class="dropdown">
-										<li><a href="#">Pre-Wedding</a></li>
-										<li><a href="#">Engagement</a></li>
-										<li><a href="#">Church</a></li>
-										<li><a href="#">Reception</a></li>
-										<li><a href="#">Post-Wedding</a></li>
-									</ul>
-								</li>
+								<li class=""><a href="gallery.html">Gallery</a></li>
 								<li><a href="about.html">About</a></li>
-								<!-- <li class="btn-cta"><a href="#"><span>RSVP</span></a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -423,7 +413,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		getInstaPhotoByTag("moon");
+		getInstaPhotoByTag("onionsnippets");
 		// https://stackoverflow.com/questions/40542335/how-to-get-all-images-of-hashtag-in-instagram-without-api
 		String.prototype.trunc = function (n, useWordBoundary) {
 			if (this.length <= n) { return this; }
@@ -438,7 +428,7 @@
 				"	<div class='loumar-blog animate-box fadeInUp animated-fast'>" +
 				"		<a target='_blank' href='" + link + "' class='blog-bg' style='background-image: url(" + thumbnail + ");'></a>" +
 				"		<div class='blog-text'>" +
-				"			<span class='posted_on'>" + new Date(timeStamp, link).toDateString() + "</span>" +
+				"			<span class='posted_on'>" + new Date(timeStamp).toDateString() + "</span>" +
 				"			<h3><a target='_blank' href='https://www.instagram.com/" + userData.username + "/'>" + userData.full_name + "</a></h3>" +
 				"			<p>" + caption.trunc(200, true) + "</p>" +
 				"			<ul class='stuff'>" +
@@ -454,11 +444,6 @@
 		}
 		function getInstaPhotoByTag(tagname) {
 			$.get("https://www.instagram.com/explore/tags/" + tagname + "/?__a=1", function (data, status) {
-				loadPhotos(tagname, data, status);
-			});
-		}
-		function getNextPage(tagname, end_cursor) {
-			$.get("https://www.instagram.com/explore/tags/" + tagname + "/?__a=1&max_id=" + end_cursor, function (data, status) {
 				loadPhotos(tagname, data, status);
 			});
 		}
