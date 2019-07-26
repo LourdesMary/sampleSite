@@ -91,7 +91,7 @@
 								<h1>I have found the one whom my soul loves.</h1>
 								<h2>Song of Solomon 3:4</h2>
 								<p>
-									<a class="btn btn-primary btn-lg btn-demo" href="#">View More</a>
+									<!-- <a class="btn btn-primary btn-lg btn-demo" href="#">View More</a> -->
 									<a class="btn btn-primary btn-lg btn-learn">RSVP</a>
 								</p>
 							</div>
@@ -368,10 +368,10 @@
 						<h2>Help us capture the moment!</h2>
 						<p>Use #sobaTakesBaby on instagram and we'll pick up the lot into our gallery <a
 								href="gallery.html" target="_blank" rel="noopener noreferrer">here</a>!</p>
-						<p>The recent posts are </p>
+						<p>The Top 3 posts are </p>
 					</div>
 				</div>
-				<div class="row" id="instafeed">
+				<div class="row" id="top3InstaContainer">
 
 				</div>
 			</div>
@@ -403,7 +403,7 @@
 					<div class="col-md-12 text-center">
 						<p>
 							<small class="block">&copy; 2020 HTML5. All Rights Reserved.</small>
-							<small class="block">Designed by <a href="#" target="_blank">Steffin</a></small>
+							<small class="block">Designed by <a href="https://steffinrayen.github.io/" target="_blank">Mary</a> Developed by <a href="http://lourdesr.github.io/" target="_blank">Lourdes</a></small>
 						</p>
 						<p>
 							<ul class="loumar-social-icons">
@@ -446,19 +446,19 @@
 				? subString.substr(0, subString.lastIndexOf(' '))
 				: subString) + "&hellip;";
 		};
-		function append(id, tagname, i, thumbnail, caption, userName, likeCount, commentCount, timeStamp) {
+		function append(id, tagname, i, thumbnail, caption, userData, likeCount, commentCount, timeStamp, link) {
 			var data =
 				"<div class='col-md-4'>" +
 				"	<div class='loumar-blog animate-box fadeInUp animated-fast'>" +
-				"		<a href='#' class='blog-bg' style='background-image: url(" + thumbnail + ");'></a>" +
+				"		<a target='_blank' href='"+link+"' class='blog-bg' style='background-image: url(" + thumbnail + ");'></a>" +
 				"		<div class='blog-text'>" +
-				"			<span class='posted_on'>" + new Date(timeStamp).toDateString() + "</span>" +
-				"			<h3><a href='#'>" + userName + "</a></h3>" +
+				"			<span class='posted_on'>" + new Date(timeStamp, link).toDateString() + "</span>" +
+				"			<h3><a target='_blank' href='https://www.instagram.com/"+userData.username+"/'>" + userData.full_name + "</a></h3>" +
 				"			<p>" + caption.trunc(200, true) + "</p>" +
 				"			<ul class='stuff'>" +
 				"				<li><i class='icon-heart2'></i>" + likeCount + "</li>" +
 				"				<li><i class='icon-chat2'></i>" + commentCount + "</li>" +
-				"				<li><a href='#'>Read More<i class='icon-arrow-right22'></i></a></li>" +
+				"				<li><a target='_blank' href='"+link+"'>Read More<i class='icon-arrow-right22'></i></a></li>" +
 				"			</ul>" +
 				"		</div>" +
 				"	</div>" +
@@ -476,17 +476,17 @@
 				loadPhotos(tagname, data, status);
 			});
 		}
-		function getUserName(id, tagname, i, thumbnail, caption, userId, likeCount, commentCount, timeStamp) {
+		function getUserName(id, tagname, i, thumbnail, caption, userId, likeCount, commentCount, timeStamp, link) {
 			$.get("https://i.instagram.com/api/v1/users/" + userId + "/info/", function (data, status) {
 				console.log(data);
-				append(id, tagname, i, thumbnail, caption, data.user.full_name, likeCount, commentCount, timeStamp);
+				append(id, tagname, i, thumbnail, caption, data.user, likeCount, commentCount, timeStamp, link);
 			});
 		}
 		function loadPhotos(tagname, data, status) {
-			var count = data.graphql.hashtag.edge_hashtag_to_media.edges.length;
+			var count = data.graphql.hashtag.edge_hashtag_to_top_posts.edges.length;
 			try {
 				for (var i = 0; i < 3 && i < count; i++) {
-					var $this = data.graphql.hashtag.edge_hashtag_to_media.edges[i].node;
+					var $this = data.graphql.hashtag.edge_hashtag_to_top_posts.edges[i].node;
 					var caption = $this.edge_media_to_caption.edges[0].node.text;
 					var thumbnail = $this.thumbnail_resources[4].src;
 					var userId = $this.owner.id;
@@ -494,7 +494,8 @@
 					var likeCount = $this.edge_liked_by.count;
 					var commentCount = $this.edge_media_to_comment.count;
 					var timeStamp = $this.taken_at_timestamp;
-					getUserName("#instafeed", tagname, i, thumbnail, caption, userId, likeCount, commentCount, timeStamp);
+					var link = "https://www.instagram.com/p/"+$this.shortcode+"/"
+					getUserName("#top3InstaContainer", tagname, i, thumbnail, caption, userId, likeCount, commentCount, timeStamp, link);
 				}
 			} catch (error) {
 			}
