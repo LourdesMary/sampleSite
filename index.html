@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <title>Lourdes.Mary</title> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<meta name="viewport" content="width=1024">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=1024"> -->
 	<meta name="description" content="some description here." />
 	<meta name="keywords"
 		content="website templates, html5, template, bootstrap, website template, html5, css3, mobile first, responsive" />
@@ -387,7 +387,9 @@
 					<div class="col-md-12 text-center">
 						<p>
 							<small class="block">&copy; 2020 HTML5. All Rights Reserved.</small>
-							<small class="block">Designed by <a href="https://steffinrayen.github.io/" target="_blank">Mary</a> Developed by <a href="http://lourdesr.github.io/" target="_blank">Lourdes</a></small>
+							<small class="block">Designed by <a href="https://steffinrayen.github.io/"
+									target="_blank">Mary</a> Developed by <a href="http://lourdesr.github.io/"
+									target="_blank">Lourdes</a></small>
 						</p>
 						<p>
 							<ul class="loumar-social-icons">
@@ -434,15 +436,15 @@
 			var data =
 				"<div class='col-md-4'>" +
 				"	<div class='loumar-blog animate-box fadeInUp animated-fast'>" +
-				"		<a target='_blank' href='"+link+"' class='blog-bg' style='background-image: url(" + thumbnail + ");'></a>" +
+				"		<a target='_blank' href='" + link + "' class='blog-bg' style='background-image: url(" + thumbnail + ");'></a>" +
 				"		<div class='blog-text'>" +
 				"			<span class='posted_on'>" + new Date(timeStamp, link).toDateString() + "</span>" +
-				"			<h3><a target='_blank' href='https://www.instagram.com/"+userData.username+"/'>" + userData.full_name + "</a></h3>" +
+				"			<h3><a target='_blank' href='https://www.instagram.com/" + userData.username + "/'>" + userData.full_name + "</a></h3>" +
 				"			<p>" + caption.trunc(200, true) + "</p>" +
 				"			<ul class='stuff'>" +
 				"				<li><i class='icon-heart2'></i>" + likeCount + "</li>" +
 				"				<li><i class='icon-chat2'></i>" + commentCount + "</li>" +
-				"				<li><a target='_blank' href='"+link+"'>Read More<i class='icon-arrow-right22'></i></a></li>" +
+				"				<li><a target='_blank' href='" + link + "'>Read More<i class='icon-arrow-right22'></i></a></li>" +
 				"			</ul>" +
 				"		</div>" +
 				"	</div>" +
@@ -478,7 +480,7 @@
 					var likeCount = $this.edge_liked_by.count;
 					var commentCount = $this.edge_media_to_comment.count;
 					var timeStamp = $this.taken_at_timestamp;
-					var link = "https://www.instagram.com/p/"+$this.shortcode+"/"
+					var link = "https://www.instagram.com/p/" + $this.shortcode + "/"
 					getUserName("#top3InstaContainer", tagname, i, thumbnail, caption, userId, likeCount, commentCount, timeStamp, link);
 				}
 			} catch (error) {
