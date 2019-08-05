@@ -1,5 +1,9 @@
 $font-primary: 'Inconsolata', Arial, sans-serif;
 
+$seaPink: #ec9a98;
+$softPeach: #f8eef1;
+$brightRed: #b50100;
+$bigStone: #344148;
 
 
 // Overrides
@@ -7,11 +11,16 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #DD356E !default;
-$brand-secondary: #FEE856 !default;
-$brand-tertiary: #2A528A !default;
+// $brand-primary: #DD356E !default;
+// $brand-secondary: #FEE856 !default;
+// $brand-tertiary: #2A528A !default;
+
+$brand-secondary: $seaPink !default;
+$brand-primary: $bigStone !default;
+$brand-tertiary: $brightRed !default;
 
 $brand-white: #fff;
+$brand-white: $softPeach;
 $brand-black: #000;
 $brand-darker: #444;
 $brand-gray: #ccc;

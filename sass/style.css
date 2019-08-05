@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-  color: #333333;
+  color: #371721;
   background: #fff;
 }
 
@@ -48,13 +48,13 @@ body {
 }
 
 a {
-  color: #DD356E;
+  color: #344148;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #DD356E;
+  color: #344148;
   outline: none;
   text-decoration: none;
 }
@@ -71,22 +71,22 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 ::-webkit-selection {
-  color: #fff;
-  background: #DD356E;
+  color: #f8eef1;
+  background: #344148;
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #DD356E;
+  color: #f8eef1;
+  background: #344148;
 }
 
 ::selection {
-  color: #fff;
-  background: #DD356E;
+  color: #f8eef1;
+  background: #344148;
 }
 
 .loumar-nav {
-  background: #fff;
+  background: #f8eef1;
 }
 
 .loumar-nav .top-menu {
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .loumar-nav #loumar-logo a span {
-  color: #DD356E;
+  color: #344148;
 }
 
 .loumar-nav a {
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .loumar-nav ul li.has-dropdown .dropdown li a:hover {
-  color: #fff;
+  color: #f8eef1;
 }
 
 .loumar-nav ul li.has-dropdown:hover a, .loumar-nav ul li.has-dropdown:focus a {
@@ -206,11 +206,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .loumar-nav ul li.btn-cta a {
   padding: 30px 0px !important;
-  color: #fff;
+  color: #f8eef1;
 }
 
 .loumar-nav ul li.btn-cta a span {
-  background: #dd356e;
+  background: #344148;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 30px;
   height: 2px;
-  background: #DD356E;
+  background: #344148;
   margin: 0 auto;
 }
 
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 90px;
   display: table;
   text-align: center;
-  background: #fff;
+  background: #f8eef1;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   -ms-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   -o-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #loumar-header .display-tc .btn,
 .loumar-cover .display-tc .btn {
   padding: 15px 30px;
-  color: #fff;
+  color: #f8eef1;
   border: none !important;
   font-size: 18px;
 }
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #loumar-header .display-tc .btn.btn-learn,
 .loumar-cover .display-tc .btn.btn-learn {
-  background: #fee856;
+  background: #ec9a98;
   border: none;
   color: #000 !important;
 }
@@ -370,32 +370,32 @@ h1, h2, h3, h4, h5, h6, figure {
 #loumar-header .display-tc .btn.btn-learn:hover, #loumar-header .display-tc .btn.btn-learn:focus,
 .loumar-cover .display-tc .btn.btn-learn:hover,
 .loumar-cover .display-tc .btn.btn-learn:focus {
-  background: rgba(254, 232, 86, 0.9) !important;
+  background: rgba(236, 154, 152, 0.9) !important;
   color: #000 !important;
 }
 
 #loumar-header .display-tc .btn:hover, #loumar-header .display-tc .btn:focus,
 .loumar-cover .display-tc .btn:hover,
 .loumar-cover .display-tc .btn:focus {
-  color: #fff !important;
+  color: #f8eef1 !important;
 }
 
 #loumar-header .display-tc .btn.btn-demo,
 .loumar-cover .display-tc .btn.btn-demo {
-  background: #dd356e;
+  background: #344148;
   border: none;
 }
 
 #loumar-header .display-tc .btn.btn-demo:hover, #loumar-header .display-tc .btn.btn-demo:focus,
 .loumar-cover .display-tc .btn.btn-demo:hover,
 .loumar-cover .display-tc .btn.btn-demo:focus {
-  background: rgba(221, 53, 110, 0.9) !important;
-  color: #fff !important;
+  background: rgba(52, 65, 72, 0.9) !important;
+  color: #f8eef1 !important;
 }
 
 #loumar-header .display-tc .btn:hover,
 .loumar-cover .display-tc .btn:hover {
-  background: #DD356E !important;
+  background: #344148 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
@@ -409,12 +409,12 @@ h1, h2, h3, h4, h5, h6, figure {
 #loumar-header .display-tc .form-inline .form-group .form-control,
 .loumar-cover .display-tc .form-inline .form-group .form-control {
   width: 100%;
-  background: #fff;
+  background: #f8eef1;
   border: none;
 }
 
 #loumar-features {
-  background: #FEE856;
+  background: #ec9a98;
 }
 
 #loumar-features .services-padding {
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #loumar-features .feature-left .icon i {
   font-size: 30px;
-  color: #1a1a1a !important;
+  color: #13080b !important;
 }
 
 #loumar-features .feature-left .icon {
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
   width: 60px;
   height: 60px;
-  background: #fff;
+  background: #f8eef1;
   border-radius: 50%;
 }
 
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 60px;
-  color: #DD356E !important;
+  color: #344148 !important;
 }
 
 #loumar-features .feature-left .feature-copy {
@@ -545,15 +545,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .user-frame small {
-  color: #2A528A;
+  color: #b50100;
 }
 
 #loumar-slider {
-  background: #2A528A;
+  background: #b50100;
 }
 
 #loumar-slider .heading h2, #loumar-slider .heading p {
-  color: #fff;
+  color: #f8eef1;
 }
 
 #loumar-slider .heading h2 {
@@ -620,7 +620,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #loumar-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #f8eef1;
 }
 
 #loumar-hero .flexslider .flex-direction-nav {
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #loumar-hero .flexslider .slider-text-bg .desc {
   margin-top: 9em;
   padding: 2em;
-  background: #FEE856;
+  background: #ec9a98;
   -webkit-box-shadow: 0px 21px 24px 0px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 21px 24px 0px rgba(0, 0, 0, 0.13);
   border-radius: 10px;
@@ -658,7 +658,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .loumar-bg-section {
-  background: rgba(221, 53, 110, 0.03);
+  background: rgba(52, 65, 72, 0.03);
 }
 
 #loumar-slider,
@@ -689,7 +689,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #loumar-content {
-  border-bottom: 2px solid rgba(221, 53, 110, 0.1);
+  border-bottom: 2px solid rgba(52, 65, 72, 0.1);
 }
 
 #loumar-started {
@@ -716,7 +716,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #DD356E;
+  color: #344148;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -770,7 +770,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #dd356e;
+  background: #344148;
 }
 
 #loumar-started .loumar-heading {
@@ -778,19 +778,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #loumar-started .loumar-heading h2 {
-  color: #fff;
+  color: #f8eef1;
   margin-bottom: 20px !important;
 }
 
 #loumar-started .loumar-heading p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(248, 238, 241, 0.8);
 }
 
 #loumar-started .btn {
   height: 54px;
   border: none !important;
-  background: #fff;
-  color: #DD356E;
+  background: #f8eef1;
+  color: #344148;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -862,7 +862,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   padding: 30px;
   float: left;
-  background: #fff;
+  background: #f8eef1;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
   -webkit-transition: 0.3s;
@@ -987,7 +987,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .loumar-team {
   position: relative;
-  background: #fff;
+  background: #f8eef1;
   padding: 30px;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -1020,7 +1020,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .loumar-team figure img {
   width: 150px;
   height: 150px;
-  border: 10px solid #fff;
+  border: 10px solid #f8eef1;
   background-size: cover;
   border-radius: 50%;
 }
@@ -1032,7 +1032,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .loumar-team > div h3 {
   margin-bottom: 0;
   font-size: 20px;
-  color: #DD356E;
+  color: #344148;
 }
 
 .loumar-team > div .position {
@@ -1266,7 +1266,7 @@ input[type="text"] {
   height: 50px;
   display: table;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #f8eef1;
   text-align: center;
   border-radius: 4px;
 }
@@ -1325,7 +1325,7 @@ input[type="text"] {
 }
 
 .loumar-nav-toggle.loumar-nav-white > i {
-  color: #fff;
+  color: #f8eef1;
   background: #000;
 }
 
@@ -1357,14 +1357,14 @@ input[type="text"] {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  background: #fff;
+  background: #f8eef1;
 }
 
 .loumar-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  background: #fff;
+  background: #f8eef1;
 }
 
 .loumar-nav-toggle {
@@ -1415,30 +1415,30 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #DD356E;
-  color: #fff;
-  border: 2px solid #DD356E;
+  background: #344148;
+  color: #f8eef1;
+  border: 2px solid #344148;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #e14b7e !important;
-  border-color: #e14b7e !important;
+  background: #3f4e57 !important;
+  border-color: #3f4e57 !important;
 }
 
 .btn-primary.btn-outline {
   background: transparent;
-  color: #DD356E;
-  border: 2px solid #DD356E;
+  color: #344148;
+  border: 2px solid #344148;
 }
 
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #DD356E;
-  color: #fff;
+  background: #344148;
+  color: #f8eef1;
 }
 
 .btn-success {
   background: #5cb85c;
-  color: #fff;
+  color: #f8eef1;
   border: 2px solid #5cb85c;
 }
 
@@ -1455,12 +1455,12 @@ input[type="text"] {
 
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #5cb85c;
-  color: #fff;
+  color: #f8eef1;
 }
 
 .btn-info {
   background: #5bc0de;
-  color: #fff;
+  color: #f8eef1;
   border: 2px solid #5bc0de;
 }
 
@@ -1477,12 +1477,12 @@ input[type="text"] {
 
 .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
   background: #5bc0de;
-  color: #fff;
+  color: #f8eef1;
 }
 
 .btn-warning {
   background: #f0ad4e;
-  color: #fff;
+  color: #f8eef1;
   border: 2px solid #f0ad4e;
 }
 
@@ -1499,12 +1499,12 @@ input[type="text"] {
 
 .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
   background: #f0ad4e;
-  color: #fff;
+  color: #f8eef1;
 }
 
 .btn-danger {
   background: #d9534f;
-  color: #fff;
+  color: #f8eef1;
   border: 2px solid #d9534f;
 }
 
@@ -1521,7 +1521,7 @@ input[type="text"] {
 
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
   background: #d9534f;
-  color: #fff;
+  color: #f8eef1;
 }
 
 .btn-outline {
@@ -1559,7 +1559,7 @@ input[type="text"] {
 }
 
 .btn.with-arrow:hover i {
-  color: #fff;
+  color: #f8eef1;
   right: 18px;
   visibility: visible;
   opacity: 1;
@@ -1579,7 +1579,7 @@ input[type="text"] {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #DD356E;
+  border-color: #344148;
 }
 
 .row-pb-md {
